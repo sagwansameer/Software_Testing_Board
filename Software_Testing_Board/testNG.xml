@@ -16,7 +16,7 @@
 		<classes>
 			<class name="com.build.stb.test.STBoard_Product_test">
 				<methods>
-					<include name="purchaseProduct1" />
+					<include name="purchaseProduct" />
 				</methods>
 			</class>
 		</classes> 

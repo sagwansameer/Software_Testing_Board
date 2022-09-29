@@ -18,6 +18,11 @@ public class BaseUITest extends BaseStrings {
 	Logger logger= LogManager.getLogger(BaseUITest.class);
 	
 
+	/*
+	 * @author Sameer Sagwan: This generic method is being used launch the web
+	 * driver as per need and return the driver reference.
+	 * 
+	 */
 	public WebDriver initialization() throws IOException {
 		String browser=Singleton.getInstance().getbrowserName();
 

@@ -6,7 +6,7 @@ public class BaseStrings {
 	static {
 		Random rand = new Random();
 		// Generate random integers in range 0 to 999
-		int random = rand.nextInt(1000000, 1999999);
+		int random = rand.nextInt(1000000);
 		password = "Pa@"+Integer.toString(random);
 		
 	}

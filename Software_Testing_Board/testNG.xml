@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Software_Testing_Board" parallel="methods" thread-count="2">
+	<listeners>
+		<listener class-name="com.build.stb.base.ItestListener" />
+	</listeners>
+	<test name="Software_Testing_Board">
+		<parameter name="BrowserName" value="chrome"></parameter>
+		<parameter name="SiteName" value="https://magento.softwaretestingboard.com"></parameter>
+		
+		<packages>
+            <package name="com.build.stb.test.*">
+            </package>
+        </packages>
+		
+		<classes>
+			<class name="com.build.stb.test.STBoard_Product_test">
+				<methods>
+					<include name="purchaseProduct1" />
+				</methods>
+			</class>
+		</classes> 
+
+	</test>
+</suite> 
